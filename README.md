@@ -23,30 +23,21 @@ uvicorn src.main:app --reload
 ## Requirements
 
 {
-  "components": [
-    {
-      "atomic_tasks": [
-        {
-          "dependencies": [],
-          "description": "Create user data model",
-          "estimated_effort": "low",
-          "files_to_modify": [
-            "src/models/user.py"
-          ],
-          "task_id": "user_model"
-        }
-      ],
-      "description": "Handle user operations",
-      "name": "User Management"
-    }
-  ],
-  "description": "A sample FastAPI project",
   "project_name": "my-fastapi-project",
-  "user_stories": [
+  "description": "Generated project from 1 task outputs",
+  "tasks": [
     {
-      "benefit": "manage data efficiently",
-      "goal": "create a REST API",
-      "role": "developer"
+      "output": [
+        {
+          "task_id": "LOGGER-1",
+          "component_name": "Logger",
+          "task_description": "Configure structured logger using Python logging library",
+          "realizes_stories": [],
+          "dependencies": [],
+          "function_name": "setup_structured_logger",
+          "pseudo_code": "FUNCTION setup_structured_logger(log_level: str) -> Logger:\n  logger = logging.getLogger('app')\n  RETURN logger\nEND FUNCTION"
+        }
+      ]
     }
   ],
   "name": "my-fastapi-project"
